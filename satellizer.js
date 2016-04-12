@@ -690,7 +690,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' && module.ex
         '$window',
         'SatellizerConfig',
         'SatellizerUtils',
-        function ($q, $interval, $window, config, utils) {
+        '$localstorage',
+        '$http',
+        function ($q, $interval, $window, config, utils, $localstorage, $http) {
             var Popup = {};
             
             Popup.url = '';
